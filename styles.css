@@ -1,6 +1,20 @@
-/*reseteo de las configuraciones predeterminadas*/
+/*inicio del reseteo de las configuraciones predeterminadas*/
 
 * {
   padding: 0;
+  margin: 0;
+}
 
+ol, ul {
+  list-style: none;
+}
+
+/*fin del reseteo de las configuraciones predeterminadas*/
+
+
+/* inicio de configuraciones para el nav */
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
 }
