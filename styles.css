@@ -33,15 +33,16 @@ ol, ul {
 }
 
 .hero {
-  /*configuracion predeterminada para darle tama;o a la clase*/
-  min-height: 80vh;
+  /*configuración default para darle tamaño a la clase*/
+  min-height: 53vh;
   width: 100%;
+  margin: 0 auto;
 
  /*propiedades del background*/
-  background-size: cover;
+  background-size: contain;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/z.jpeg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
   background-color: red;
 
   /*posiciones de los items*/
@@ -53,12 +54,12 @@ ol, ul {
 .hero p {
   text-align: center;
   color: white;
+  justify-content: center;
 }
 .hero div {
   /*especificaciones para las imagenes*/
   width: 80%;
   height: 200px;
-  
  
 }
 .hero a {
@@ -73,5 +74,6 @@ ol, ul {
   border-radius: 20px 20px;
   padding: 0.3rem;
   position: absolute;
-  bottom: 10rem;
+  margin-top: 10rem;
+  background-color: rgba(255, 248, 231, 0.5)
 }
