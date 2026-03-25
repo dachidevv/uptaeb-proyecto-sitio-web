@@ -1,0 +1,77 @@
+/*inicio del reseteo de las configuraciones predeterminadas*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*fin del reseteo de las configuraciones predeterminadas*/
+
+
+/* inicio de configuraciones para el nav */
+
+.nav-bar {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 1.2rem;
+  box-shadow: 0 0 2px black;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+  padding: 2.2rem;
+}
+
+.nav-bar img {
+  height: auto;
+  max-width: 100%;
+}
+
+.hero {
+  /*configuracion predeterminada para darle tama;o a la clase*/
+  min-height: 80vh;
+  width: 100%;
+
+ /*propiedades del background*/
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/z.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+
+  /*posiciones de los items*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero p {
+  text-align: center;
+  color: white;
+}
+.hero div {
+  /*especificaciones para las imagenes*/
+  width: 80%;
+  height: 200px;
+  
+ 
+}
+.hero a {
+  /*estilos, decoraciones, etc*/
+  
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px 20px;
+  padding: 0.3rem;
+  position: absolute;
+  bottom: 10rem;
+}
