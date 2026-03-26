@@ -32,20 +32,29 @@ ol, ul {
   max-width: 100%;
 }
 
+/* inicio de la configuración para el hero */
+
+.container-for-hero {
+  /*propiedades del background*/
+  background-size: contain;
+  background-image: url('images/z.jpeg');
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-color: red;
+   width: 80%;
+
+}
+
 .hero {
   /*configuración default para darle tamaño a la clase*/
 
   min-height: 53vh;
-  width: 80%;
+ 
   margin: 0 auto;
   margin-top: 1rem;
-
- /*propiedades del background*/
-  background-size: contain;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/z.jpeg');
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-color: red;
+  background-color: hsla(0, 0%, 0%, 0.35);
+ 
+  
 
   /*posiciones de los items*/
   display: flex;
@@ -58,12 +67,7 @@ ol, ul {
   color: white;
   justify-content: center;
 }
-.hero div {
-  /*especificaciones para las imagenes*/
-  width: 80%;
-  height: 200px;
- 
-}
+
 .hero a {
   /*estilos, decoraciones, etc*/
   
@@ -79,3 +83,5 @@ ol, ul {
   margin-top: 10rem;
   background-color: rgba(255, 248, 231, 0.5)
 }
+
+/* fin de la configuración para el hero */
