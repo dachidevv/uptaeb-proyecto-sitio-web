@@ -15,21 +15,23 @@ ol, ul {
 /* inicio de configuraciones para el nav */
 
 .nav-bar {
-  
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.5rem;
+  gap: 3rem;
 
-  padding: 2.2rem;
+  padding: 0.5rem;
 
   box-shadow: 0 0 2px black;
   border-bottom: 1px solid gray;
+  
 
 }
 
 .nav-bar a {
   
-  gap: 1rem;
-  justify-content: space-between;
+
 
   padding: 2.2rem;
 
@@ -46,8 +48,8 @@ ol, ul {
 
 
 .nav-bar img {
-  height: auto;
-  max-width: 100%;
+  width: auto;
+  height: 60px;
 }
 
 /* fin configuración del nav */
@@ -130,7 +132,7 @@ ol, ul {
         min-height: 30rem;
         height: auto;   /* súper importante, permite que el div crezca verticalmente. */
         box-sizing: border-box;
-        width: 80%; /* es 80% para que no ocupe absolutamente toda la página y poder tener cierto margen */
+        width: 75%; /* es 80% para que no ocupe absolutamente toda la página y poder tener cierto margen */
       
         background-color: #ffffff;
         margin: 1.5rem auto;
