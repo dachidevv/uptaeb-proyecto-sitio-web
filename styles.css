@@ -15,24 +15,31 @@ ol, ul {
 /* inicio de configuraciones para el nav */
 
 .nav-bar {
-  border-bottom: 1px solid gray;
+  
   text-align: center;
-  padding: 2.2rem;
-  box-shadow: 0 0 2px black;
   margin-bottom: 0.5rem;
+
+  padding: 2.2rem;
+
+  box-shadow: 0 0 2px black;
+  border-bottom: 1px solid gray;
+
 }
 
 .nav-bar a {
-  text-decoration: none;
-  color: #000;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-
-  padding: 2.2rem;
+  
   gap: 1rem;
   justify-content: space-between;
 
+  padding: 2.2rem;
+
+   text-decoration: none;
+   color: #000;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+
 }
+
 .nav-bar a:hover {
   color: #f8bb86;
 }
@@ -48,51 +55,58 @@ ol, ul {
 
 
 .hero {
-  /*configuración default para darle tamaño a la clase*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* ver luego si este overflow es realmente necesario */
+
+  /* tamaño a la clase */
   min-height: 35vh;
   width: 90%;
   margin: 0 auto;
 
- /*propiedades del background*/
+ 
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/dulces_mostrador.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-color: red;
+  background-color: papayawhip;
 
-  /*posiciones de los items*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
+  
 }
 
 .hero p {
+  
   text-align: center;
   color: white;
   justify-content: center;
+
 }
+
 .hero div {
   /*especificaciones para las imagenes*/
   width: 80%;
   height: 200px;
  
 }
+
 .hero a {
   /*estilos, decoraciones, etc*/
+   
+  margin-top: 1rem;                      /* hay que trabajar la posición de este a*/
+  justify-content: center;
+  align-items: center;            
+  position: absolute;
   
-  margin-top: 20px;
+  padding: 0.3rem;
+  
   color: white;
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
   border: 1px solid black;
   border-radius: 20px 20px;
-  padding: 0.3rem;
-  position: absolute;
-  margin-top: 10rem;
-  background-color: rgba(255, 248, 231, 0.5)
+  background-color: rgba(255, 248, 231, 0.5);
+
 }
 
 /* fin configuración del hero */
@@ -100,89 +114,102 @@ ol, ul {
 
 /* inicio de la configuración de los banners */
  
-/* estilos para los productos */
+  /* estilos para los productos */
 
    
-/* configuración de la envoltura */
-  .banner-base {
-    display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8rem;
-
-      min-height: 30rem;
-      height: auto;   /* súper importante, permite que el div crezca verticalmente. */
-      box-sizing: border-box;
-      width: 82%; /* es 90% para que no ocupe absolutamente toda la página y poder tener cierto margen */
-    
-      background-color: #F7EBEB;
-      margin: 2rem auto;
-  }
-
- 
-    /* estilizado de imagen */
-    
-    .contenedor-producto {
-      justify-content: center;
-      display: flex;
-    
-    }
-    
-    .contenedor-producto img {
-      width: auto;
-      max-height: 35rem;
-      object-fit: cover;
-
-    }
-
-    /* estilizado de información*/
-    .contenedor-info {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-
-      min-width: 35rem; 
-                        /* los widths aquí funcionan como un no-wrap, quizá solo debamos usar un no-wrap */  
-      max-width: 50rem; 
+    /* configuración de la banner base */
+    .banner-base {
       
-   
+        display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        /* tamaño de la clase */
+        min-height: 30rem;
+        height: auto;   /* súper importante, permite que el div crezca verticalmente. */
+        box-sizing: border-box;
+        width: 80%; /* es 80% para que no ocupe absolutamente toda la página y poder tener cierto margen */
+      
+        background-color: #ffffff;
+        margin: 1.5rem auto;
+    }
+
+  
+      /* estilizado de imagen */
+      
+      .contenedor-producto {
+        
+        display: flex;
+        justify-content: flex-end;
+        
+      }
+      
+      .contenedor-producto img {
+        width: auto;
+        max-height: 35rem;
+        object-fit: cover;
+
+      }
+
+      /* estilizado de información*/
+      .contenedor-info {
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        padding: 2rem 2rem 7.5rem 2em;
+
+        color: #1A1A1A;
+
+      }
+      
+      .contenedor-info h1 {
+      
+      justify-content: center;
+      text-align: center;
+      align-self: center;
       padding: 2rem;
-      color: #1A1A1A;
-    }
-    
-    .contenedor-info h1 {
+      
+      font-size: 4rem;
+      font-family: Garamond, Georgia, serif; /* esta fuente se va a seguir usando en los headers*/
+      font-weight: 500;
 
-    font-family: Georgia, serif; /* esta fuente se va a seguir usando en los headers*/
-    font-weight: bold 500;
-    justify-content: center;
-    font-size: 3rem;
+      }
 
-    }
-
-    .contenedor-info p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* esta fuente se va a seguir usando en los p*/
-    justify-content: center;
-    align-items: center;
-    
-    
-    min-width: 30rem;
-    max-width: 45rem;
-    margin-top: 1.5rem;
-    
-    
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-    
+      .contenedor-info p {
+      
+      
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      
+      /* tamaño de la clase */
+      min-width: 30rem;
+      max-width: 45rem;
+      
+      
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      letter-spacing: 0.04rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* esta fuente se va a seguir usando en los p*/
+      
     }
 
 
-     /* colores */
-    .rosa-cuarzo {
-    background-color:  #F7EBEB;
-    }
+      /* colores */
+      .rosa-cuarzo {
+      background-color:  #F7EBEB;
+      }
 
-    .marron-leche {
-      background-color: #d9bf9d;
-    }
+      .marron-leche {
+        background-color: #d9bf9d;
+      }
+
+      .lila-palido {
+        background-color: #d5caea
+      }
