@@ -17,15 +17,26 @@ ol, ul {
 .nav-bar {
   border-bottom: 1px solid gray;
   text-align: center;
-  padding: 1.2rem;
+  padding: 2.2rem;
   box-shadow: 0 0 2px black;
+  margin-bottom: 0.5rem;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+
   padding: 2.2rem;
+  gap: 1rem;
+  justify-content: space-between;
+
 }
+.nav-bar a:hover {
+  color: #f8bb86;
+}
+
 
 .nav-bar img {
   height: auto;
@@ -38,21 +49,23 @@ ol, ul {
 
 .hero {
   /*configuración default para darle tamaño a la clase*/
-  min-height: 53vh;
-  width: 100%;
+  min-height: 35vh;
+  width: 90%;
   margin: 0 auto;
 
  /*propiedades del background*/
-  background-size: contain;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/z.jpeg');
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/dulces_mostrador.jpg');
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: top;
   background-color: red;
 
   /*posiciones de los items*/
   display: flex;
   align-items: center;
   justify-content: center;
+
+  overflow: hidden;
 }
 
 .hero p {
@@ -86,14 +99,13 @@ ol, ul {
 
 
 /* inicio de la configuración de los banners */
-  /* configuración de la envoltura */
+ 
+/* estilos para los productos */
 
-  /* producto 1 */
-    
-    /* div padre*/
-    .banner1 {
-      
-      display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
+   
+/* configuración de la envoltura */
+  .banner-base {
+    display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
@@ -102,31 +114,31 @@ ol, ul {
       min-height: 30rem;
       height: auto;   /* súper importante, permite que el div crezca verticalmente. */
       box-sizing: border-box;
-      width: 90%; /* es 90% para que no ocupe absolutamente toda la página y poder tener cierto margen */
+      width: 82%; /* es 90% para que no ocupe absolutamente toda la página y poder tener cierto margen */
     
       background-color: #F7EBEB;
       margin: 2rem auto;
-    }
-      
+  }
+
+ 
     /* estilizado de imagen */
     
-    .producto1 {
+    .contenedor-producto {
       justify-content: center;
       display: flex;
     
     }
     
-    .producto1 img {
+    .contenedor-producto img {
       width: auto;
       max-height: 35rem;
       object-fit: cover;
-      object-position: center;
 
     }
 
-    
-    .informacion1 {
-
+    /* estilizado de información*/
+    .contenedor-info {
+      display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
@@ -135,12 +147,12 @@ ol, ul {
                         /* los widths aquí funcionan como un no-wrap, quizá solo debamos usar un no-wrap */  
       max-width: 50rem; 
       
-      display: flex;
+   
       padding: 2rem;
-      color: #4A4A4A;
-    
+      color: #1A1A1A;
     }
-    .informacion1 h1 {
+    
+    .contenedor-info h1 {
 
     font-family: Georgia, serif; /* esta fuente se va a seguir usando en los headers*/
     font-weight: bold 500;
@@ -149,7 +161,7 @@ ol, ul {
 
     }
 
-    .informacion1 p {
+    .contenedor-info p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* esta fuente se va a seguir usando en los p*/
     justify-content: center;
     align-items: center;
@@ -163,4 +175,14 @@ ol, ul {
     font-size: 1.6rem;
     line-height: 2.3rem;
     
+    }
+
+
+     /* colores */
+    .rosa-cuarzo {
+    background-color:  #F7EBEB;
+    }
+
+    .marron-leche {
+      background-color: #d9bf9d;
     }
