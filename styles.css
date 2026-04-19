@@ -93,16 +93,16 @@ ol, ul {
     /* div padre*/
     .banner1 {
       
-      display: flex;
+      display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       gap: 8rem;
 
       min-height: 30rem;
-      height: auto; /* súper importante, permite que el div crezca verticalmente. */
+      height: auto;   /* súper importante, permite que el div crezca verticalmente. */
       box-sizing: border-box;
-      width: 90%;
+      width: 90%; /* es 90% para que no ocupe absolutamente toda la página y poder tener cierto margen */
     
       background-color: #F7EBEB;
       margin: 2rem auto;
@@ -119,7 +119,7 @@ ol, ul {
     .producto1 img {
       width: auto;
       max-height: 35rem;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
 
     }
@@ -131,22 +131,26 @@ ol, ul {
       align-items: flex-start;
       flex-direction: column;
 
-      min-width: 35rem;
-      max-width: 50rem;
+      min-width: 35rem; 
+                        /* los widths aquí funcionan como un no-wrap, quizá solo debamos usar un no-wrap */  
+      max-width: 50rem; 
+      
       display: flex;
       padding: 2rem;
       color: #4A4A4A;
     
     }
     .informacion1 h1 {
-    font-family: Georgia, serif;
+
+    font-family: Georgia, serif; /* esta fuente se va a seguir usando en los headers*/
     font-weight: bold 500;
     justify-content: center;
     font-size: 3rem;
+
     }
 
     .informacion1 p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* esta fuente se va a seguir usando en los p*/
     justify-content: center;
     align-items: center;
     
