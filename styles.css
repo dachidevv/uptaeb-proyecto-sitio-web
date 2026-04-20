@@ -15,31 +15,31 @@ ol, ul {
 /* inicio de configuraciones para el nav */
 
 .nav-bar {
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
-  gap: 3rem;
+  margin-bottom: 1rem;
+  
 
   padding: 0.5rem;
 
   box-shadow: 0 0 2px black;
   border-bottom: 1px solid gray;
-  
+  height: 120px;
 
 }
 
 .nav-bar a {
   
-
-
-  padding: 2.2rem;
+   padding: 2.8rem; /* brecha entre los elementos a */
 
    text-decoration: none;
-   color: #000;
+   color: #1a1a1a;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
    text-transform: uppercase;
-
+  
+   
 }
 
 .nav-bar a:hover {
@@ -49,7 +49,7 @@ ol, ul {
 
 .nav-bar img {
   width: auto;
-  height: 60px;
+  height: 120px;
 }
 
 /* fin configuración del nav */
@@ -59,56 +59,61 @@ ol, ul {
 .hero {
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* ver luego si este overflow es realmente necesario */
-
+ 
+  
+  overflow: hidden;
+  
   /* tamaño a la clase */
-  min-height: 35vh;
-  width: 90%;
+  min-height: 15vh;
+  width: 75%;
   margin: 0 auto;
 
  
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url('images/dulces_mostrador.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url();
   background-repeat: no-repeat;
   background-position: top;
   background-color: papayawhip;
-
+  border-radius: 80px;
   
 }
 
 .hero p {
-  
+
+  width: 90%;
+
   text-align: center;
-  color: white;
-  justify-content: center;
-
+  color: #1d1b1b;
+  font-weight: 500;
+  font-size: 2.8rem;
+  
 }
 
-.hero div {
-  /*especificaciones para las imagenes*/
-  width: 80%;
-  height: 200px;
- 
-}
 
 .hero a {
   /*estilos, decoraciones, etc*/
-   
-  margin-top: 1rem;                      /* hay que trabajar la posición de este a*/
-  justify-content: center;
-  align-items: center;            
-  position: absolute;
   
-  padding: 0.3rem;
-  
-  color: white;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 20px 20px;
-  background-color: rgba(255, 248, 231, 0.5);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 90px;
+  height: auto;
 
+  
+  text-decoration: none;
+  text-align: center;
+
+  border: 1px solid black;
+  border-radius: 50px;
+  color: rgb(44, 40, 40);
+  
+}
+
+.hero a:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* fin configuración del hero */
@@ -167,7 +172,7 @@ ol, ul {
         padding: 2rem 2rem 7.5rem 2em;
 
         color: #1A1A1A;
-
+        overflow: hidden;
       }
       
       .contenedor-info h1 {
