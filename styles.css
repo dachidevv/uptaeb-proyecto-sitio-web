@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /*súper necesario para que el padding no estire las cajas */
 }
 
 ol, ul {
@@ -14,15 +15,16 @@ ol, ul {
 
 /* inicio de configuraciones para el nav */
 
+
 .nav-bar {
 
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  
+  position: relative;
+  gap: 40px;
 
-  padding: 0.5rem;
 
   box-shadow: 0 0 2px black;
   border-bottom: 1px solid gray;
@@ -32,13 +34,15 @@ ol, ul {
 
 .nav-bar a {
   
-   padding: 2.8rem; /* brecha entre los elementos a */
+  display: inline-flex;
+  height: auto;
 
-   text-decoration: none;
-   color: #1a1a1a;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-   text-transform: uppercase;
-  
+  padding: 0 2rem;
+
+  text-decoration: none;
+  color: #1a1a1a;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; 
    
 }
 
@@ -46,10 +50,46 @@ ol, ul {
   color: #f8bb86;
 }
 
+.nav-bar .logo img {
+  width: max-content;
+  height: 100px;
+  display: block;
 
-.nav-bar img {
+
+  
+}
+
+
+.redes-sociales {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  
+  right: 20px;
+  top: 35%;
+  gap: 50px;
+  
   width: auto;
-  height: 120px;
+  height: 40px;  
+  
+
+}
+
+.redes-sociales a {
+  padding: 0;
+  width: 80px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.redes-sociales img {
+ 
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+
 }
 
 /* fin configuración del nav */
@@ -67,15 +107,15 @@ ol, ul {
   overflow: hidden;
   
   /* tamaño a la clase */
-  min-height: 15vh;
-  width: 75%;
+  min-height: 17vh;
+  width: 80%;
   margin: 0 auto;
 
  
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(images/bandera-venezuela.jpeg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 62%;
   background-color: papayawhip;
   border-radius: 80px;
   
@@ -84,9 +124,9 @@ ol, ul {
 .hero p {
 
   width: 90%;
-
+  text-shadow: 5px 3px black;
   text-align: center;
-  color: #1d1b1b;
+  color: #ffffff;
   font-weight: 500;
   font-size: 2.8rem;
   
@@ -107,7 +147,7 @@ ol, ul {
 
   border: 1px solid black;
   border-radius: 50px;
-  color: rgb(44, 40, 40);
+  color: rgb(255, 255, 255);
   
 }
 
