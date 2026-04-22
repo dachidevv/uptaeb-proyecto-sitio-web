@@ -170,7 +170,7 @@ ol, ul {
         display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 4rem;
 
         /* tamaño de la clase */
