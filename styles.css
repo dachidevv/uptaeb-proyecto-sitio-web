@@ -176,7 +176,7 @@ ol, ul {
 
  
   background-size: cover;
-  background-image: linear-gradient(rgba(247, 182, 3, 0.993));
+  background-image: linear-gradient(rgba(255, 102, 0.993));
   background-repeat: no-repeat;
   background-position: 50% 62%;
   background-color: navajowhite;
@@ -294,6 +294,6 @@ ol, ul {
       .lila-palido {
         background-color: #d5caea
       }
-      .verde-menta /*color de purba solo configuro unas coas aparte para preguntas*/{
-        background-color: #169873;
+      .azul-marino /*color de purba solo configuro unas coas aparte para preguntas*/{
+        background-color: #90a169;
       }
