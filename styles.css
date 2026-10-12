@@ -158,6 +158,40 @@ ol, ul {
 
 /* fin configuración del hero */
 
+/* configuración del pregunta-hero */
+.preguntas-hero  {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  
+  overflow: hidden;
+  
+  /* tamaño a la clase */
+  min-height: 17vh;
+  width: 80%;
+  margin: 0 auto;
+
+ 
+  background-size: cover;
+  background-image: linear-gradient(rgba(247, 182, 3, 0.993));
+  background-repeat: no-repeat;
+  background-position: 50% 62%;
+  background-color: navajowhite;
+  border-radius: 80px;
+}
+.preguntas-hero p {
+
+  width: 90%;
+  
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.8rem;
+  
+}
 
 /* inicio de la configuración de los banners */
  
@@ -259,4 +293,7 @@ ol, ul {
 
       .lila-palido {
         background-color: #d5caea
+      }
+      .verde-menta /*color de purba solo configuro unas coas aparte para preguntas*/{
+        background-color: #169873;
       }
