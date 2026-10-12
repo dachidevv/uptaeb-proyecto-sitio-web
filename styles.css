@@ -15,7 +15,6 @@ ol, ul {
 
 /* inicio de configuraciones para el nav */
 
-
 .nav-bar {
 
   display: flex;
@@ -47,15 +46,16 @@ ol, ul {
 }
 
 .nav-bar a:hover {
+
   color: #f8bb86;
+
 }
 
 .nav-bar .logo img {
+
   width: max-content;
   height: 100px;
-  display: block;
-
-
+  display: block;  
   
 }
 
@@ -78,10 +78,12 @@ ol, ul {
 }
 
 .redes-sociales a {
+
   padding: 0;
   width: 80px;
   height: 40px;
   justify-content: space-between;
+
 }
 
 .redes-sociales img {
@@ -95,7 +97,7 @@ ol, ul {
 /* fin configuración del nav */
 
 
-
+/* inicio configuración hero */
 .hero {
 
   display: flex;
@@ -134,7 +136,7 @@ ol, ul {
 
 
 .hero a {
-  /*estilos, decoraciones, etc*/
+  /* estilos, decoraciones, etc */
   
   margin-top: 1rem;
   padding: 0.5rem;
@@ -157,6 +159,7 @@ ol, ul {
 }
 
 /* fin configuración del hero */
+
 
 /* configuración del pregunta-hero */
 .preguntas-hero  {
