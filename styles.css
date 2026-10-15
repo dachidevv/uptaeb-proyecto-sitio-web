@@ -192,6 +192,7 @@ ol, ul {
   font-size: 2.8rem;
   
 }
+/*fin configuración del pregunta-hero */
 
 /* inicio de la configuración de los banners */
  
@@ -296,4 +297,8 @@ ol, ul {
       }
       .azul-marino /*color de purba solo configuro unas coas aparte para preguntas*/{
         background-color: #90a169;
+      }
+
+      .listado-preguntas{
+        
       }
