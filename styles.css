@@ -299,6 +299,37 @@ ol, ul {
         background-color: #90a169;
       }
 
-      .listado-preguntas{
-        
-      }
+.titulo-preguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.listado-preguntas{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contedor-preguntas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
