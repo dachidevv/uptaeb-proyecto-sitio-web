@@ -195,6 +195,7 @@ ol, ul {
   font-size: 2.8rem;
   
 }
+/*fin configuración del pregunta-hero */
 
 /* inicio de la configuración de los banners */
  
@@ -300,3 +301,107 @@ ol, ul {
       .azul-marino /*color de purba solo configuro unas coas aparte para preguntas*/{
         background-color: #90a169;
       }
+
+
+/*apartado  configuracion de prguntas y respuesta*/
+
+.titulo-preguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*configuracion de contedor de informacion de preguntas frecuentas*/
+
+.contedor-preguntas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.listado-preguntas{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 80%;
+  margin: 0 auto;
+}
+.listado-preguntas ul{
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.listado-preguntas li{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.acordeon{
+
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.acordeon-header{
+  
+  list-style: none; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  color: #080808;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.acordeon-header::-webkit-details-marker {
+
+  display: none;
+}
+
+.acordeon-header .icono::before{
+  
+  content: "+";
+  color: #FF6600;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+details[open] .acordeon-header .icono::before{
+  content: "−"; 
+  color: #3EB489; 
+}
+
+.acordeon-contentnedor{
+  padding: 0 20px 20px 20px;
+  color: #030303;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.acordeon-content p {
+  margin-top: 15px;
+}
