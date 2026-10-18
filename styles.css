@@ -298,9 +298,7 @@ ol, ul {
       .lila-palido {
         background-color: #d5caea
       }
-      .azul-marino /*color de purba solo configuro unas coas aparte para preguntas*/{
-        background-color: #90a169;
-      }
+
 
 
 /*apartado  configuracion de prguntas y respuesta*/
@@ -318,7 +316,7 @@ ol, ul {
 
 /*configuracion de contedor de informacion de preguntas frecuentas*/
 
-.contedor-preguntas{
+.contenedor-preguntas{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,6 +326,7 @@ ol, ul {
   width: 80%;
   margin: 0 auto;
 }
+/*configuracion de el listado de preguntas frecuentas*/
 
 .listado-preguntas{
 
@@ -354,6 +353,9 @@ ol, ul {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/*configuracion class de acordeon*/
+
 .acordeon{
 
   width: 100%;
@@ -405,3 +407,5 @@ details[open] .acordeon-header .icono::before{
 .acordeon-content p {
   margin-top: 15px;
 }
+
+/* fin de configuracion de preguntas frecuentas*/
