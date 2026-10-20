@@ -1,4 +1,13 @@
-/*inicio del reseteo de las configuraciones predeterminadas*/
+          /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+            
+                              1. ESTILOS GLOBALES
+                              & NAVBAR
+            
+              |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+          */
+
+
+  /*inicio del reseteo de las configuraciones predeterminadas*/
 
 * {
   padding: 0;
@@ -10,13 +19,9 @@ ol, ul {
   list-style: none;
 }
 
-
-
-
-/* inicio de configuraciones para el nav */
+    /* inicio de configuraciones para el nav */
 
 .nav-bar {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,11 +33,9 @@ ol, ul {
   box-shadow: 0 0 2px black;
   border-bottom: 1px solid gray;
   height: 120px;
-
 }
 
 .nav-bar a {
-  
   display: inline-flex;
   height: auto;
 
@@ -42,17 +45,13 @@ ol, ul {
   color: #1a1a1a;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; 
-   
 }
 
 .nav-bar a:hover {
-
   color: #f8bb86;
-
 }
 
 .nav-bar .logo img {
-
   width: max-content;
   height: 100px;
   display: block;  
@@ -61,7 +60,6 @@ ol, ul {
 
 
 .redes-sociales {
-  
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -73,28 +71,27 @@ ol, ul {
   
   width: auto;
   height: 40px;  
-  
-
 }
 
 .redes-sociales a {
-
   padding: 0;
   width: 80px;
   height: 40px;
   justify-content: space-between;
-
 }
 
 .redes-sociales img {
- 
   width: 80px;
   height: 40px;
-  object-fit: contain;
-
+  object-fit: contain
 }
 
-
+  /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+                        
+      2. HOME
+                                              
+     |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+ */
 
 
 /* inicio configuración hero */
@@ -263,22 +260,18 @@ ol, ul {
 
 
 
-
-
-
-
+                          /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+                            
+                                              3. F.A.Q
+                            
+                            |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+                          */
 
 
 
 /*apartado  configuracion de prguntas y respuesta*/
 
 .titulo-preguntas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
   width: 80%;
   margin: 0 auto;
 }
@@ -290,7 +283,7 @@ ol, ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+
 
   width: 80%;
   margin: 0 auto;
@@ -303,7 +296,6 @@ ol, ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
   
   width: 80%;
   margin: 0 auto;
@@ -319,17 +311,16 @@ ol, ul {
   margin-bottom: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
 }
 
   /*configuracion class de acordeon*/
 
-.acordeon{
+.acordeon {
 
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -346,25 +337,6 @@ ol, ul {
   font-weight: bold;
 }
 
-.acordeon-header::-webkit-details-marker {
-
-  display: none;
-}
-
-.acordeon-header .icono::before{
-  
-  content: "+";
-  color: #FF6600;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-details[open] .acordeon-header .icono::before{
-  content: "−"; 
-  color: #3EB489; 
-}
-
 .acordeon-contentnedor{
   padding: 0 20px 20px 20px;
   color: #030303;
@@ -379,7 +351,12 @@ details[open] .acordeon-header .icono::before{
 
 
 
-
+                                /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+                                  
+                                                    4. ABOUT ME
+                                  
+                                  |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+                                */
 
 /* inicio de la configuracion del about me*/
 .contenedor-aboutme {
