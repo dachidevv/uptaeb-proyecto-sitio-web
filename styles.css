@@ -19,9 +19,10 @@ ol, ul {
   list-style: none;
 }
 
-    /* inicio de configuraciones para el nav */
+    /* NAV */
 
 .nav-bar {
+  /*posicionamiento de los elementos*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,32 +31,40 @@ ol, ul {
   gap: 40px;
 
 
+  /*estilizado de la barra*/
   box-shadow: 0 0 2px black;
   border-bottom: 1px solid gray;
   height: 120px;
 }
 
 .nav-bar a {
-  display: inline-flex;
+  /* display: inline-flex; */
   height: auto;
 
-  padding: 0 2rem;
+  padding: 1rem;
 
   text-decoration: none;
   color: #1a1a1a;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+}
+
+.nav-bar .secciones {
+  margin-left: 10rem;
 }
 
 .nav-bar a:hover {
   color: #f8bb86;
 }
 
+.nav-bar .logo {
+  position: absolute;
+}
+
 .nav-bar .logo img {
   width: max-content;
   height: 100px;
   display: block;  
-  
 }
 
 
@@ -63,8 +72,7 @@ ol, ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: absolute;
-  
+
   right: 20px;
   top: 35%;
   gap: 50px;
@@ -85,6 +93,7 @@ ol, ul {
   height: 40px;
   object-fit: contain
 }
+    /* NAV */
 
   /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
                         
@@ -102,9 +111,6 @@ ol, ul {
   align-items: center;
   justify-content: center;
  
-  
-  overflow: hidden;
-  
   /* tamaño a la clase */
   min-height: 17vh;
   width: 80%;
@@ -117,7 +123,7 @@ ol, ul {
   background-position: 50% 62%;
   background-color: papayawhip;
   
-  
+  overflow: hidden;
 }
 
 .hero p {
@@ -133,21 +139,19 @@ ol, ul {
 
 
 .hero a {
-  /* estilos, decoraciones, etc */
   
   margin-top: 1rem;
   padding: 0.5rem;
   width: 90px;
   height: auto;
 
-  
+  /* estilizado */
   text-decoration: none;
   text-align: center;
 
   border: 1px solid black;
   border-radius: 50px;
   color: rgb(255, 255, 255);
-  
 }
 
 .hero a:hover {
@@ -214,7 +218,7 @@ ol, ul {
       
       .contenedor-info h1 {
       
-      justify-content: center;
+  
       text-align: center;
       align-self: center;
       padding: 2rem;
@@ -233,7 +237,6 @@ ol, ul {
       text-align: center;
       
       /* tamaño de la clase */
-      min-width: 30rem;
       max-width: 45rem;
       
       
@@ -258,6 +261,10 @@ ol, ul {
         background-color: #d5caea
       }
 
+      .gradiente-amarillo {
+        background-image: linear-gradient(rgb(255, 199, 30));
+      }
+
 
 
                           /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
@@ -274,6 +281,9 @@ ol, ul {
 .titulo-preguntas {
   width: 80%;
   margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
   /*configuracion de contedor de informacion de preguntas frecuentas*/
@@ -361,40 +371,98 @@ ol, ul {
 /* inicio de la configuracion del about me*/
 .contenedor-aboutme {
   display: flex;
-  width: 80%;
- }
+  width: 50%;
+}
       
 .contenedor-aboutme img {
   width: 100%;
   object-fit: cover;
   border-radius: 400px;
-  min-height: 2vh;
       }
 
-.hero-presentacion {
-  /* posición de la imagen */
+                                /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+                                  
+                                                    5. MEDIA QUERIES
+                                  
+                                  |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+                                */
+
+
+  /* NAVBAR */
+
+@media (max-width: 992px) {
+  
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+  
+  .nav-bar a {
+    visibility: hidden;
+  }
+
+  .nav-bar .logo {
+    visibility: visible;
+  }
+
+  .redes-sociales {
+    position: static; /* Quita el posicionamiento absoluto */
+    justify-content: center;
+    margin-top: 0.5rem; 
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  
+  
+
+  /* --- HERO ADAPTATIVO --- */
+  .hero {
+    width: 95%; /* Mayor aprovechamiento del espacio lateral */
+    border-radius: 30px; /* Bordes más suaves en móvil */
+    padding: 2rem 1rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem; /* Reducción de tamaño para evitar desbordes */
+  }
+
+  /* --- BANNERS DE PRODUCTOS EN COLUMNA --- */
+  .banner-base {
+    flex-direction: column; /* Apila imagen y texto verticalmente */
+    width: 90%;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  /* Asegura que todos los elementos ocupen el ancho completo */
+  .contenedor-producto,
+  .contenedor-info {
+    width: 100%;
+  }
+
+  .contenedor-info {
+    padding: 1rem;
+  }
+
+  .contenedor-info h1 {
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+  }
+
+  .contenedor-info p {
+    min-width: unset; /* Desactiva el ancho mínimo fijo */
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+
+  .contenedor-aboutme {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin: 5rem 0rem 0rem 15rem;
-  
-  overflow: hidden;
-  
-  /* tamaño a la clase */
-   min-height: 60vh;
   width: 80%;
- 
-  /* fondo gradiente */
-  background-image: linear-gradient(rgb(255, 199, 30));
+  }
 }
-
-.hero-presentacion img {
-  max-height: 100%;
-  width: auto;
-  display: block;
-}
-
-
-
-
-
