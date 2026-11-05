@@ -30,6 +30,12 @@ ol, ul {
   position: relative;
   gap: 40px;
 
+  /*estilizado de la barra*/
+  box-shadow: 0 0 2px black;
+  border-bottom: 1px solid gray;
+  height: 120px;
+}
+
 .menu-movil{
   display: none;
 }
@@ -60,11 +66,6 @@ ol, ul {
 }
 }
 
-  /*estilizado de la barra*/
-  box-shadow: 0 0 2px black;
-  border-bottom: 1px solid gray;
-  height: 120px;
-}
 
 .nav-bar a {
   /* display: inline-flex; */
