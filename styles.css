@@ -21,7 +21,7 @@ ol, ul {
 
     /* NAV */
 
-.nav-bar-escritorio {
+.nav-bar {
   /*posicionamiento de los elementos*/
   display: flex;
   align-items: center;
@@ -39,10 +39,31 @@ ol, ul {
 .menu-movil{
   display: none;
 }
-@media(max-width: 700px){
- .nav-bar-escritorio {
- display: none;
+
+@media(max-width: 992px){
+ .nav-bar {
+ flex-direction: row;
+ justify-content: space-between;
+ height: auto;
+ min-height: 80px;
+ padding: 0 1rem;
+ gap: 1rem;
 } 
+.nav-bar > .secciones {
+  display: none;
+}
+.nav-bar >.redes-sociales {
+  display: none;
+}
+
+.nav-bar > .logo{
+  position: static;
+}
+
+.nav-bar .logo img{
+  width: 120px;
+  height: auto;
+}
 .menu-movil{
   display: block;
   position: relative;
@@ -63,6 +84,11 @@ ol, ul {
   padding: 0.5rem;
   background: #ffffff;
   box-shadow: 0 2px 8px #0003;
+}
+.menu-movil-contenido a{
+  display:block;
+  padding:0.75em;
+  visibility: visible;
 }
 }
 
