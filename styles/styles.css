@@ -94,7 +94,7 @@ ol, ul {
 .redes-sociales img {
   width: 80px;
   height: 40px;
-  object-fit: contain
+  object-fit: contain;
 }
     /* NAV */
 
@@ -121,7 +121,7 @@ ol, ul {
 
  
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/bandera-venezuela.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/bandera-venezuela.jpeg);
   background-repeat: no-repeat;
   background-position: 50% 62%;
   background-color: papayawhip;
@@ -265,7 +265,7 @@ ol, ul {
       }
 
       .gradiente-amarillo {
-        background-image: linear-gradient(rgb(255, 199, 30));
+        background-image: linear-gradient(rgb(255, 199, 30), rgb(255, 199, 30));
       }
 
       .amarillo-real {
@@ -278,97 +278,7 @@ ol, ul {
 
 
 
-                          /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
-                            
-                                              3. F.A.Q
-                            
-                            |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
-                          */
-
-
-
-/*apartado  configuracion de prguntas y respuesta*/
-
-.titulo-preguntas {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-  /*configuracion de contedor de informacion de preguntas frecuentas*/
-
-.contenedor-preguntas{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-
-  width: 80%;
-  margin: 0 auto;
-}
-  /*configuracion de el listado de preguntas frecuentas*/
-
-.listado-preguntas{
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  width: 80%;
-  margin: 0 auto;
-}
-.listado-preguntas ul{
-
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-.listado-preguntas li{
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 100px;
-}
-
-  /*configuracion class de acordeon*/
-
-.acordeon {
-
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.acordeon-header{
-  
-  list-style: none; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  cursor: pointer;
-  color: #080808;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.acordeon-contentnedor{
-  padding: 0 20px 20px 20px;
-  color: #030303;
-  line-height: 1.6;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-}
-
-.acordeon-content p {
-  margin-top: 15px;
-}
+ 
 
 
 
@@ -425,8 +335,8 @@ ol, ul {
     margin-top: 0.5rem; 
   }
 
-  .nav-bar > .secciones
-.nav-bar >.redes-sociales {
+  .nav-bar > .secciones,
+  .nav-bar > .redes-sociales {
   display: none;
 }
  
