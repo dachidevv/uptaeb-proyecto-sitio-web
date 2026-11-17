@@ -40,11 +40,6 @@ ol, ul {
   display: none;
 }
 
-.menu-movil{
-  display: none;
-}
-
-
 .nav-bar a {
   /* display: inline-flex; */
   height: auto;
@@ -271,6 +266,14 @@ ol, ul {
 
       .gradiente-amarillo {
         background-image: linear-gradient(rgb(255, 199, 30));
+      }
+
+      .amarillo-real {
+        background-color: rgb(255, 245, 199);
+      }
+
+      .amarillo-carne {
+        background-color: #ffcba8ea;
       }
 
 
