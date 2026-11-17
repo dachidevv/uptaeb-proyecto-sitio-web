@@ -121,7 +121,7 @@ ol, ul {
 
  
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(images/bandera-venezuela.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/bandera-venezuela.jpg);
   background-repeat: no-repeat;
   background-position: 50% 62%;
   background-color: papayawhip;
