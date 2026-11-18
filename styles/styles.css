@@ -284,7 +284,7 @@ ol, ul {
 
                                 /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
                                   
-                                                    4. ABOUT ME
+                                                    3. ABOUT ME
                                   
                                   |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
                                 */
@@ -303,7 +303,7 @@ ol, ul {
 
                                 /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
                                   
-                                                    5. MEDIA QUERIES
+                                                    4. MEDIA QUERIES
                                   
                                   |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
                                 */
@@ -315,28 +315,34 @@ ol, ul {
 
 @media (max-width: 992px) {
   
-  .nav-bar {
+.nav-bar {
     flex-direction: column;
     height: auto;
     gap: 1rem;
   }
-  
-  .nav-bar a {
+.min-logo{
+    width: max-content;
+    height: 50px;
+    display: block;
+    
+  }
+
+.nav-bar a {
+    visibility: hidden ;
+  }
+
+.nav-bar .logo {
     visibility: hidden;
   }
 
-  .nav-bar .logo {
-    visibility: visible;
-  }
-
-  .redes-sociales {
+.redes-sociales {
     position: static; /* Quita el posicionamiento absoluto */
     justify-content: center;
     margin-top: 0.5rem; 
   }
 
-  .nav-bar > .secciones,
-  .nav-bar > .redes-sociales {
+.nav-bar > .secciones,
+.nav-bar > .redes-sociales {
   display: none;
 }
  
@@ -348,39 +354,45 @@ ol, ul {
   width: 120px;
   height: auto;
 }
+
 .menu-movil{
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  display: flex;
+  justify-content: center;
+  
 }
+
 .menu-movil summary{
   cursor: pointer;
   font-size: 2rem;
   list-style :none;
 }
+
 .menu-movil-contenido{
   position: absolute;
   top: 50%;
-  right: 0;
-  left: auto;
+  justify-content: center;
   width: 240px;
+  min-width: 200px;
   z-index: 10;
+
   display: flex;
   flex-direction: column;
-  min-width: 200px;
+
+  
   padding: 0.5rem;
   background: #ffffff;
   box-shadow: 0 2px 8px #0003;
   border-radius: 8px;
 }
+
 .menu-movil-contenido a{
   display:block;
   padding:0.75em;
   visibility: visible;
 
+  }
 }
-}
+
 @media screen and (max-width: 992px) {
   
   
