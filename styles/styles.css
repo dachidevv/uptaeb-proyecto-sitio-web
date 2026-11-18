@@ -350,7 +350,9 @@ ol, ul {
 }
 .menu-movil{
   display: block;
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .menu-movil summary{
   cursor: pointer;
@@ -359,15 +361,18 @@ ol, ul {
 }
 .menu-movil-contenido{
   position: absolute;
-  top: 100%;
+  top: 50%;
   right: 0;
-  z-index: 1;
+  left: auto;
+  width: 240px;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   min-width: 200px;
   padding: 0.5rem;
   background: #ffffff;
   box-shadow: 0 2px 8px #0003;
+  border-radius: 8px;
 }
 .menu-movil-contenido a{
   display:block;
