@@ -341,12 +341,12 @@ ol, ul {
     margin-top: 0.5rem; 
   }
 
-.nav-bar > .secciones,
-.nav-bar > .redes-sociales {
+.nav-bar .secciones,
+.nav-bar .redes-sociales {
   display: none;
 }
  
-.nav-bar > .logo{
+.nav-bar .logo{
   position: static;
 }
 
