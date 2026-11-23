@@ -1,0 +1,118 @@
+
+                                /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
+                                  
+                                                    5. MEDIA QUERIES
+                                  
+                                  |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
+                                */
+
+
+  /* NAVBAR */
+
+
+
+@media (max-width: 992px) {
+
+.nav-bar a {
+  display: none;
+  }
+
+.nav-bar .logo {
+  display: none;
+  }
+
+.nav-bar .secciones,
+.nav-bar .redes-sociales {
+  display: none;
+}
+
+ 
+.menu-movil{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-movil summary {
+  cursor: pointer;
+  font-size: 2rem;
+  list-style :none;
+}
+
+.menu-movil-contenido {
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  width: 240px;
+  min-width: 200px;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+
+  
+  padding: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px #0003;
+  border-radius: 8px;
+}
+
+.menu-movil-contenido a {
+  display:block;
+  padding:0.75em;
+  visibility: visible;
+
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  
+  
+
+  /* --- HERO ADAPTATIVO --- */
+  .hero {
+    width: 95%; /* Mayor aprovechamiento del espacio lateral */
+    border-radius: 30px; /* Bordes más suaves en móvil */
+    padding: 2rem 1rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem; /* Reducción de tamaño para evitar desbordes */
+  }
+
+  /* --- BANNERS DE PRODUCTOS EN COLUMNA --- */
+  .banner-base {
+    flex-direction: column; /* Apila imagen y texto verticalmente */
+    width: 90%;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  /* Asegura que todos los elementos ocupen el ancho completo */
+  .contenedor-producto,
+  .contenedor-info {
+    width: 100%;
+  }
+
+  .contenedor-info {
+    padding: 1rem;
+  }
+
+  .contenedor-info h1 {
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+  }
+
+  .contenedor-info p {
+    min-width: unset; /* Desactiva el ancho mínimo fijo */
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+
+  .contenedor-aboutme {
+  display: flex;
+  width: 80%;
+  }
+}

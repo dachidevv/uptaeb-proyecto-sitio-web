@@ -19,6 +19,9 @@ ol, ul {
   list-style: none;
 }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
     /* NAV */
 
 .nav-bar {
@@ -48,7 +51,6 @@ ol, ul {
 
   text-decoration: none;
   color: #1a1a1a;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -74,10 +76,7 @@ ol, ul {
 .redes-sociales {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 
-  right: 20px;
-  top: 35%;
   gap: 50px;
   
   width: auto;
@@ -88,7 +87,6 @@ ol, ul {
   padding: 0;
   width: 80px;
   height: 40px;
-  justify-content: space-between;
 }
 
 .redes-sociales img {
@@ -174,13 +172,10 @@ ol, ul {
         display: flex; /* todo lo que tenga que ver con el flex en esta sección, va a referirse a centrar los elementos de la sección */
         align-items: center;
         justify-content: center;
-        flex-wrap: nowrap;
         gap: 4rem;
 
         /* tamaño de la clase */
-        min-height: 30rem;
         height: auto;   /* súper importante, permite que el div crezca verticalmente. */
-        box-sizing: border-box;
         width: 75%; /* es 75% para que no ocupe absolutamente toda la página y poder tener cierto margen */
       
         background-color: #ffffff;
@@ -211,7 +206,6 @@ ol, ul {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        flex-wrap: nowrap;
         width: 50%;
         padding: 2rem 2rem 7.5rem 2rem;
 
@@ -233,9 +227,6 @@ ol, ul {
       }
 
       .contenedor-info p {
-      
-      
-      justify-content: center;
       align-self: center;
       text-align: center;
       
@@ -246,39 +237,9 @@ ol, ul {
       font-size: 1.6rem;
       line-height: 2.3rem;
       letter-spacing: 0.04rem;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* esta fuente se va a seguir usando en los p*/
+      /* esta fuente se va a seguir usando en los p*/
       
-    }
-
-
-      /* colores */
-      .rosa-cuarzo {
-      background-color:  #F7EBEB;
-      }
-
-      .marron-leche {
-        background-color: #d9bf9d;
-      }
-
-      .lila-palido {
-        background-color: #d5caea
-      }
-
-      .gradiente-amarillo {
-        background-image: linear-gradient(rgb(255, 199, 30), rgb(255, 199, 30));
-      }
-
-      .amarillo-real {
-        background-color: rgb(255, 245, 199);
-      }
-
-      .amarillo-carne {
-        background-color: #ffcba8ea;
-      }
-
-
-
- 
+    } 
 
 
 
@@ -290,157 +251,50 @@ ol, ul {
                                 */
 
 /* inicio de la configuracion del about me*/
-.contenedor-aboutme {
-  display: flex;
-  width: 50%;
-}
+  .contenedor-aboutme {
+    display: flex;
+    width: 50%;
+  }
       
-.contenedor-aboutme img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 400px;
-      }
-
+  .contenedor-aboutme img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 400px;
+  }
+  
                                 /* |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°| 
                                   
-                                                    4. MEDIA QUERIES
+                                                    4. MISC
                                   
                                   |°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
                                 */
 
-
-  /* NAVBAR */
-
-
-
-@media (max-width: 992px) {
-  
-.nav-bar {
-    flex-direction: column;
-    height: auto;
-    gap: 1rem;
-  }
-.min-logo{
-    width: max-content;
-    height: 50px;
-    display: block;
-    
+      /* colores */
+  .rosa-cuarzo {
+    background-color:  #F7EBEB;
   }
 
-.nav-bar a {
-    visibility: hidden ;
+  .marron-leche {
+    background-color: #d9bf9d;
   }
 
-.nav-bar .logo {
-    visibility: hidden;
+  .lila-palido {
+    background-color: #d5caea
   }
 
-.redes-sociales {
-    position: static; /* Quita el posicionamiento absoluto */
-    justify-content: center;
-    margin-top: 0.5rem; 
+  .gradiente-amarillo {
+    background-image: linear-gradient(rgb(255, 199, 30), rgb(255, 199, 30));
   }
 
-.nav-bar .secciones,
-.nav-bar .redes-sociales {
-  display: none;
-}
- 
-.nav-bar .logo{
-  position: static;
-}
-
-.nav-bar .logo img{
-  width: 120px;
-  height: auto;
-}
-
-.menu-movil{
-  display: flex;
-  justify-content: center;
-  
-}
-
-.menu-movil summary{
-  cursor: pointer;
-  font-size: 2rem;
-  list-style :none;
-}
-
-.menu-movil-contenido{
-  position: absolute;
-  top: 50%;
-  justify-content: center;
-  width: 240px;
-  min-width: 200px;
-  z-index: 10;
-
-  display: flex;
-  flex-direction: column;
-
-  
-  padding: 0.5rem;
-  background: #ffffff;
-  box-shadow: 0 2px 8px #0003;
-  border-radius: 8px;
-}
-
-.menu-movil-contenido a{
-  display:block;
-  padding:0.75em;
-  visibility: visible;
-
-  }
-}
-
-@media screen and (max-width: 992px) {
-  
-  
-
-  /* --- HERO ADAPTATIVO --- */
-  .hero {
-    width: 95%; /* Mayor aprovechamiento del espacio lateral */
-    border-radius: 30px; /* Bordes más suaves en móvil */
-    padding: 2rem 1rem;
+  .amarillo-real {
+    background-color: rgb(255, 245, 199);
   }
 
-  .hero p {
-    font-size: 1.8rem; /* Reducción de tamaño para evitar desbordes */
+  .amarillo-carne {
+    background-color: #ffcba8ea;
   }
 
-  /* --- BANNERS DE PRODUCTOS EN COLUMNA --- */
-  .banner-base {
-    flex-direction: column; /* Apila imagen y texto verticalmente */
-    width: 90%;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+  .almendra {
+    background-color: #ffeacd;
   }
 
-  /* Asegura que todos los elementos ocupen el ancho completo */
-  .contenedor-producto,
-  .contenedor-info {
-    width: 100%;
-  }
-
-  .contenedor-info {
-    padding: 1rem;
-  }
-
-  .contenedor-info h1 {
-    font-size: 2.2rem;
-    padding: 0.5rem 0;
-  }
-
-  .contenedor-info p {
-    min-width: unset; /* Desactiva el ancho mínimo fijo */
-    width: 100%;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-  }
-
-
-  .contenedor-aboutme {
-  display: flex;
-  width: 80%;
-  }
-}

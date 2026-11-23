@@ -11,7 +11,7 @@
 
   /*configuracion de contedor de informacion de preguntas frecuentas*/
 
-.contenedor-preguntas{
+.contenedor-preguntas {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@
 }
   /*configuracion de el listado de preguntas frecuentas*/
 
-.listado-preguntas{
+.listado-preguntas {
 
   display: flex;
   flex-direction: column;
@@ -33,14 +33,14 @@
   width: 80%;
   margin: 0 auto;
 }
-.listado-preguntas ul{
+.listado-preguntas ul {
 
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-.listado-preguntas li{
+.listado-preguntas li {
   margin-bottom: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -57,7 +57,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.acordeon-header{
+.acordeon-header {
   
   list-style: none; 
   display: flex;
@@ -70,7 +70,7 @@
   font-weight: bold;
 }
 
-.acordeon-contentnedor{
+.acordeon-contenedor {
   padding: 0 20px 20px 20px;
   color: #030303;
   line-height: 1.6;
@@ -78,6 +78,6 @@
 
 }
 
-.acordeon-contentnedor p {
+.acordeon-contenedor p {
   margin-top: 15px;
 }
